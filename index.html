@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        img.prasiddha {
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                float: left;
+                margin-right: 10px;
+            }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Prasiddha Shukla Portfolio</h1>
+        <button id="theme-toggle">dark mode</button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="resume.pdf" download>Download Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Pre-Final Year BTech student at MITWPU, specializing in Computer and Electrical Engineering. I have a strong command of Advanced Python Functions, Data Science, and scripting languages like JavaScript, C, and C++. My expertise extends to Databases (SQL) and Computer Vision using TensorFlow and UI based Python Library Tkinter.
+            I am deeply passionate about Data Visualization, leveraging Matplotlib, Pandas, and NumPy to create insightful and interactive visual representations. Additionally, I have experience in developing UI interfaces using Tkinter, bringing data-driven applications to life.
+            Driven by curiosity and innovation, I continuously explore new technologies to enhance my skill set and contribute to impactful projects.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="project-list"></div>
+        <button id="load-more">Load More Projects</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-status"></p>
+    </section>
+
+    <footer>
+        <img class="prasiddha" src="prasiddha.jpg"alt="Cold Palmer"> 
+        <p>Prasiddha Shukla</p>
+        <a href="https://www.linkedin.com/in/prasiddha-shukla-0866b8249/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/PrasiddhaShukla" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
